@@ -2,98 +2,126 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>StarFox Intergalactic Travel Agency</title>
+  <link rel="stylesheet" href="/css/styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>starfox travel agency</title>
-  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <h1>starfox travel agency</h1>
-
-  <div class="content"><!-- content -->
-    <header>
-      <div class="row"><!-- row -->
-        <div class="hide-for-small medium-4 large-4 columns">
-          <div class="title"><!-- title -->
-            <h1>
-              <span>starfox</span>intergalactic travel agency
-            </h1>
-          </div><!-- closing title -->
-        </div><!-- closing hide-for-small medium-4 large-4 columns -->
-
-        <div class="show-for-small hide-for-medium hide-for-large">
-          <div class="title"><!-- title -->
-            <h1>
-              <span>starfox</span>
-            </h1>
-          </div><!-- closing title -->
-        </div><!-- show-for-small hide-for-medium hide-for-large -->
-      </div><!-- closing row -->
-      
-      <div class="row"><!-- row -->
-        <ul class="nav">
-          <li><a href="#">home</a></li>
-          <li><a href="#">about</a></li>
-          <li><a href="#">services</a></li>
-          <li><a href="#">intersteller travels</a></li>
-        </ul>
-      </div><!-- closing row -->
-    </header>
-
-    <div class="layout">
-      <div class="row"><!-- row -->
-        <div class="large-7 medium-7 small-12">
-          <div class="hero_left"><!-- hero_left -->
+  <header>
+    <div class="row">
+      <div class="small-12 columns">
+        <h1 class="desktop_logo hide-for-small">
+          <a href="#">
+            <span>StarFox</span> Intergalactic Travel Agency
+          </a>
+        </h1>
+        <nav class="desktop-nav hide-for-small">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Intersteller Travel</a></li>
+          </ul>  
+        </nav>
+        <nav class="top-bar show-for-small" data-topbar role="navigation">
+          <ul class="title-area show-for-small">
+            <li class="name">
+              <h1 class="mobile_logo">
+                <a href="#">
+                  <span>StarFox</span> Intergalactic Travel Agency
+                </a>
+              </h1>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="#"><span>ICONHERE</span></a></li>
+          </ul>
+          <section class="top-bar-section">
+            <!-- right nav section -->
+            <ul class="right">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Intersteller Travel</a></li>
+            </ul>
+          </section>
+        </nav>  
+      </div><!-- small-12 columns -->
+    </div><!-- row -->
+  </header>
+  <div class="hero">
+    <div class="row">
+      <div class="small-12 columns">
+        <div class="hero_wrapper clearfix">
+          <div class="hero_text">
             <p>
-              we will take you to the <span>moon and back</span>! lorem ipsum dolor sit amet, consectetur adipisicing elit. cras vitae leo est. maecenas sit amet nisi tellus. donec a consequat mi, ut sodales eros!
+              We will take you to the <span>Moon and Back</span>! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, cupiditate repellendus!
             </p>
-          </div><!-- closing hero_left -->
-        </div><!-- closing large-7 medium-7 small-12 -->
-        <div class="large-4 medium-4 small-12">
-          <div class="hero_right">
-            <a class="find_out_more" href="#">Find Out More</a>
-          </div><!-- hero_right -->
-        </div><!-- closing large-4 medium-4 small-12  -->
-      </div><!-- closing row -->
-
-      <div class="row"><!-- row -->
-        <div class="large-4 medium-4 small-12">
-          <div class="to_the_moon"><!-- to the moon -->
-            <h2>to the moon</h2>
-            <p>$30,000</p>
-            <p>Covers travel fare, lodgings, and meals for 3 months in space.</p>
-          </div><!-- closing to_the_moon -->
-        </div><!-- closing large-4 medium-4 small-12   -->
-        
-        <div class="large-4 medium-4 small-12">
-          <div class="just_around_earth">
-            <h3>just around earth</h3>
-            <p>$10,000</p>
+          </div><!-- hero_text -->
+          <div class="hero_action">
+            <a href="hero_button">Find Out More</a>
+          </div><!-- hero_action -->
+        </div><!-- hero_wrapper -->  
+      </div><!-- closing small-12 columns -->
+    </div><!-- closing row -->
+  </div><!-- closing hero -->
+  <div class="highlights">
+    <div class="row">
+      <div class="large-4 medium-12 small-12 columns">
+        <div class="to_the_moon highlight">
+          <h2 class="hide-for-medium">To the Moon</h2>
+          <h3>$30,000</h3>
+          <div class="highlight_description">
+            <h2 class="hide-for-small hide-for-large">To the Moon</h2>
+            <p>Cover travel fare, lodgings, and meals for 2 weeks in space.</p>
+          </div><!-- highlight_description -->
+        </div><!-- to_the_moon highlight -->
+      </div><!-- large-4 medium-12 small-12 columns -->
+      <div class="large-4 medium-12 small-12 columns">
+        <div class="just_around_earth highlight">
+          <h2 class="hide-for-medium">Just Around Earth</h2>
+          <h3>$10,000</h3>
+          <div class="highlight_description">
+            <h2 class="hide-for-small hide-for-large">Just Around Earth</h2>
             <p>Covers travel fare, lodgings, and meals for 2 weeks in space.</p>
-          </div><!-- just_around_earth -->
-        </div><!-- closing large-4 medium-4 small-12   -->
+          </div><!-- highlight_description -->
+        </div><!-- just_around_earth highlight -->
+      </div><!-- large-4 medium-12 small-12 columns -->
+      <div class="large-4 medium-12 columns show-for-large">
+        <div class="more_details highlight">
+          <div class="just_to_jupiter small_highlight">
+            <h4>Just to Jupiter</h4>
+            <h5>$26,000</h5>
+          </div><!-- just_to_jupiter small_highlight -->
+          <div class="center_of_the_earth small_highlight">
+            <h4>Center of the Earth</h4>
+            <h5>$156,000</h5>
+          </div><!-- center_of_the_earthsmall_highlight"> -->
+            <a href="#" class="more_deals_desktop">More Deals</a>
+        </div><!-- more_details highlight -->
+      </div><!-- large-4 medium-12 columns show-for-large -->
+    </div><!-- row -->
+  </div><!-- highlights -->
 
-        <div class="large-4 hide-for-medium hide-for-small">
-          <div class="just_to_jupiter">
-            <h4>just to jupiter</h4>
-            <p>$26,000</p>
-          </div><!-- closing just_to_jupiter -->
-          <div class="center_of_the_earth">
-            <h5>center of the earth</h5>
-            <p>$156,000</p>
-            <a class="more_deals" href="#">Find Out More</a>
-          </div><!-- closing center_of_the_earth -->
-        </div><!-- closing large-4 hide-for-medium hide-for-small   -->        
-      </div><!-- closing row -->
+  <div class="more_deals_container hide-for-large">
+    <div class="row">
+      <div class="small-12 columns">
+        <a href="#" class="more_deals_mobile">More Deals</a>
+      </div><!-- small-12 columns -->
+    </div><!-- row -->
+  </div><!-- more_deals_container hide-for-large -->
 
-      <footer class="row">
-        <p>UFO graphics design by Kari Gaynor and Dmitriy from the Noun Project</p>
-      </footer><!-- closing footer row -->
-    </div><!-- closing layout -->
-  </div><!-- closing content -->
+  <footer>
+    <div class="row">
+        <div class="small-12 columns">
+          <p>
+            UFO graphics designs by Kari Gaynor and Dmitriy Lagunov from the Noun Project
+          </p>
+        </div><!-- small-12 columns -->
+    </div><!-- closing row -->
+  </footer>
 
   <script src="/bower_components/modernizr/modernizr.js"></script>
   <script src="/bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="/bower_components/foundation/js/foundation.min.js"></script> 
+  <script src="/bower_components/foundation/js/foundation.min.js"></script>
   <script>
     $(document).foundation();
   </script>

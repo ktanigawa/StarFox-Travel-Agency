@@ -1,8 +1,23 @@
+@import "http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700.css";
+@import "partials/mixins";
 @import "partials/settings";
 @import "partials/foundation";
 
-$dark_grey: #333;
 
 body{
-  background-color: $dark_grey;
+  background-color: white;
+}
+
+// h1{
+//   background-color: $base;
+// }
+
+// .hero{
+//   background-color: $white;
+// }
+
+footer .row{
+  background-color: red;
+  color: blue;
+  @include starfox_font(12px, $blue, 300) 
 }
