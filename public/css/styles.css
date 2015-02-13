@@ -116,7 +116,7 @@ select {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 62.5rem; }
+  max-width: 68.75rem; }
   .row:before, .row:after {
     content: " ";
     display: table; }
@@ -130,8 +130,8 @@ select {
     margin-right: 0; }
   .row .row {
     width: auto;
-    margin-left: -0.9375rem;
-    margin-right: -0.9375rem;
+    margin-left: -2.65625rem;
+    margin-right: -2.65625rem;
     margin-top: 0;
     margin-bottom: 0;
     max-width: none; }
@@ -151,8 +151,8 @@ select {
         clear: both; }
 
 .column, .columns {
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
+  padding-left: 2.65625rem;
+  padding-right: 2.65625rem;
   width: 100%;
   float: left; }
 
@@ -261,8 +261,8 @@ select {
     left: auto; }
   .column, .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 2.65625rem;
+    padding-right: 2.65625rem;
     float: left; }
   .small-1 {
     width: 8.33333%; }
@@ -339,8 +339,8 @@ select {
     margin-left: 0;
     margin-right: 0; }
   .row.small-uncollapse > .column, .row.small-uncollapse > .columns {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 2.65625rem;
+    padding-right: 2.65625rem;
     float: left; } }
 
 @media only screen and (min-width:40.063em) {
@@ -442,8 +442,8 @@ select {
     left: auto; }
   .column, .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 2.65625rem;
+    padding-right: 2.65625rem;
     float: left; }
   .medium-1 {
     width: 8.33333%; }
@@ -520,8 +520,8 @@ select {
     margin-left: 0;
     margin-right: 0; }
   .row.medium-uncollapse > .column, .row.medium-uncollapse > .columns {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 2.65625rem;
+    padding-right: 2.65625rem;
     float: left; }
   .push-0 {
     position: relative;
@@ -719,8 +719,8 @@ select {
     left: auto; }
   .column, .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 2.65625rem;
+    padding-right: 2.65625rem;
     float: left; }
   .large-1 {
     width: 8.33333%; }
@@ -797,8 +797,8 @@ select {
     margin-left: 0;
     margin-right: 0; }
   .row.large-uncollapse > .column, .row.large-uncollapse > .columns {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 2.65625rem;
+    padding-right: 2.65625rem;
     float: left; }
   .push-0 {
     position: relative;
@@ -2191,7 +2191,7 @@ meta.foundation-mq-topbar {
     .top-bar.expanded {
       background: #333333; }
   .contain-to-grid .top-bar {
-    max-width: 62.5rem;
+    max-width: 68.75rem;
     margin: 0 auto;
     margin-bottom: 0; }
   .top-bar-section {
@@ -3008,10 +3008,58 @@ th.hide-for-touch {
 body {
   background-color: white; }
 
-footer .row {
-  background-color: red;
-  color: blue;
-  text-align: center;
-  font-size: 12px;
-  font-color: #93CDCC;
+@media only screen and (max-width: 40em) {
+  header .row {
+    background-color: #333333; } }
+@media only screen and (min-width:40.063em) {
+  header .row {
+    background-color: #93CDCC; } }
+
+header .row > .columns {
+  padding-left: 0;
+  padding-right: 0; }
+
+nav.top-bar .top-bar-section ul > li {
+  border-top: 1px solid #93CDCC; }
+nav.top-bar li.toggle-topbar a span {
+  background-image: url('/images/menu_icon.png');
+  background-repeat: no-repeat;
+  background-size: 18px; }
+nav.top-bar h1.mobile_logo {
+  background-image: url('/images/logo.svg');
+  background-repeat: no-repeat;
+  background-size: 45px; }
+nav.top-bar a span:nth-child(1) {
+  color: #93CDCC;
+  font-weight: 600;
+  padding-left: 40px; }
+nav.top-bar a span:nth-child(2) {
+  color: #93CDCC;
   font-weight: 300; }
+
+.hero {
+  background-color: #93CDCC; }
+  @media only screen and (max-width: 40em) {
+    .hero {
+      background-image: url('/images/ship.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 20px; } }
+  @media only screen and (min-width:64.063em) {
+    .hero {
+      background-image: url('/images/ship.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% -20%;
+      margin: auto;
+      width: 350px;
+      height: 250px;
+      padding: 50px; } }
+
+footer .row {
+  background-color: #333333; }
+  footer .row p {
+    text-align: center;
+    font-size: 1em;
+    font-color: #FFFFFF;
+    font-weight: 300; }
