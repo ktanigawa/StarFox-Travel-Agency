@@ -5,19 +5,179 @@
 
 
 body{
-  background-color: white;
+  background-color: $white;
 }
 
-// h1{
-//   background-color: $base;
-// }
+header .row{
+  @media #{$small-only}{
+    background-color: $oil;
+  }
+  @media #{$medium-only}{
+    background-color: $blue;
+    div h1.desktop_logo{
+      background-image: url('/images/logo.svg');
+      background-size: 140px;
+      background-repeat: no-repeat;
+      background-position: 50% 20px;
+      height: 150px;
+    }
+  }
+  @media #{$large-up}{
+    height: 250px;
+    background-color: $blue;
+  }
+}
 
-// .hero{
-//   background-color: $white;
-// }
+header .row > .columns{
+  @media #{$small-only}{
+    padding-left: 0;
+    padding-right: 0;
+  } 
+}
+
+nav.desktop-nav{
+  @media #{$medium-up}{
+    background-color: $dark_grey; 
+    border-radius: 5px;
+    text-align: center;
+    position: absolute;
+    top: 175px;
+    width: 90%;
+    ul li{
+      display: inline-block;
+      margin: 0 20px;
+      padding-top: 15px;
+      a{
+        @include starfox_font(18px, $blue, 300);
+      }
+      a:hover{
+        @include starfox_font(18px, $white, 500);
+      }
+    }
+  }
+}
+
+nav.top-bar{
+  @media #{$small-only}{
+    ul.title-area.show-for-small{
+      padding-left: 20px;
+    }
+    .top-bar-section ul > li{
+      border-top: 1px solid $light_blue;
+    }
+    .top-bar-section ul li > a{
+      font-weight: 300;
+      font-size: 15px;
+      color: $blue;
+    }
+    li.toggle-topbar a span{
+      background-image: url('/images/menu_icon.png');
+      background-repeat: no-repeat;
+      background-size: 18px;
+    } 
+    h1.mobile_logo{
+      background-image: url('/images/logo.svg');
+      background-repeat: no-repeat;
+      background-size: 40px;
+    }
+    a span:nth-child(1){
+      color: $blue;
+      font-weight: 600;
+      padding-left: 35px;
+    }
+    a span:nth-child(2){
+      color: $blue;
+      font-weight: 300;
+    }
+  }
+}
+
+
+
+.hero .row{
+  background-color: $blue;
+  padding-bottom: 45px;
+  
+  .hero_action{
+    background-color: $steel;
+    padding: 10px;
+    text-align: center;
+    border-bottom: solid 5px $dark_grey;
+    a{
+      @include starfox_font(15px, $white, 300);
+      letter-spacing: 1px;
+      display: inline-block;
+    }
+    @media #{$medium-only}{
+      margin: 0 auto;
+      width: 30%;
+    }
+    @media #{$large-up}{
+      float: right;
+      width: 30%;
+    }
+  }
+}
+
+.hero_text{ 
+  background-image: url('/images/ship.png');
+  background-repeat: no-repeat;
+  background-size: 225px;
+  @media #{$small-only}{
+    background-position: 50% -20px;
+  }
+  @media #{$medium-only}{
+    background-position: 50% 20%;
+  }
+  @media #{$large-up}{
+    background-position: 90% -20px;
+  }
+  p{
+    @media #{$small-only}{
+      padding-top: 175px;
+      text-align: center;
+      padding-bottom: 10px;
+      @include starfox_font(19px, $dark_grey, 300);
+      span{
+        @include starfox_font(19px, $dark_grey, 600);
+      }
+    }
+    @media #{$medium-only}{
+      padding-top: 200px;
+      text-align: center;
+      padding-bottom: 10px;
+      @include starfox_font(19px, $dark_grey, 300);
+      span{
+        @include starfox_font(19px, $dark_grey, 600);
+      }
+    }
+    @media #{$large-up}{
+      background-color: blue;
+      border-radius: 5px;
+      padding: 25px;
+      @include starfox_font(25px, $dark_grey, 300);
+      span{
+        @include starfox_font(25px, $dark_grey, 600);
+      }
+      text-align: left;
+      float: left;
+      width: 60%;
+      padding: 50px;    
+    }
+  }
+}
+
+.highlights{
+  background-color: red;
+}
 
 footer .row{
-  background-color: red;
-  color: blue;
-  @include starfox_font(12px, $blue, 300) 
+  background-color: $dark_grey;
+  padding-top: 20px;
+  p{
+    @include starfox_font(15px, $grey, 300);
+    line-height: 17px;
+    padding-top: 2px;
+  }
 }
+
