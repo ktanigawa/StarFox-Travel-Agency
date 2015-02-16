@@ -168,7 +168,29 @@ nav.top-bar{
 }
 
 .highlights{
-  background-color: red;
+  padding-top: 50px;
+  .just_around_earth,
+  .to_the_moon.highlight{
+    background-color: $steel;
+    border-radius: 5px;
+    text-align: center;
+    h2{
+      @include starfox_font(18px, $white, 600);
+      border-bottom: solid 1px $grey;
+      height: 50px;
+      padding-top: 15px;
+    }
+    h3{
+      @include starfox_font(50px, $white, 300);
+      text-decoration: underline;
+      height: 60px;
+      padding-top: 15px;
+    }
+    p{
+      @include starfox_font(12px, $white, 300);
+      padding: 30px 70px 30px;
+    }
+  }
 }
 
 footer .row{
