@@ -182,7 +182,6 @@ nav.top-bar{
     }
     h3{
       @include starfox_font(50px, $white, 300);
-      text-decoration: underline;
       height: 60px;
       padding-top: 15px;
     }
@@ -193,13 +192,34 @@ nav.top-bar{
   }
 }
 
+.more_deals_container{
+  background-color: $blue;
+  height: 85px;
+  a{
+    @include starfox_font(25px, $white, 600);
+    display: block;
+    text-align: center;
+    background-image: url('/images/arrow.png');
+    background-repeat: no-repeat;
+    background-size: 40px;
+    @media #{$small-only}{
+      background-position: 245px 20px;
+      padding-top: 23px;
+    }
+    @media #{$medium-only}{
+      background-position: 500px 20px;
+      padding-top: 23px;
+    }
+  }
+}
+
 footer .row{
   background-color: $dark_grey;
-  padding-top: 20px;
+  height: 85px;
   p{
-    @include starfox_font(15px, $grey, 300);
-    line-height: 17px;
-    padding-top: 2px;
+    @include starfox_font(12px, $grey, 300);
+    line-height: 15px;
+    padding: 30px 30px;
   }
 }
 
