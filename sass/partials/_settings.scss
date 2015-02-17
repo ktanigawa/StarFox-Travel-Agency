@@ -101,7 +101,7 @@ $font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial
 $light_blue: #AAEDEC;
 $blue: #93CDCC;
 $grey: #494949;
-$dark_grey: #2D2D2D;
+$dark_grey: #333333;
 $steel: #5B5B5B;
 $lightgrey: #666666;
 $hovergrey: #444444;
@@ -1399,7 +1399,7 @@ $reveal-max-width: $row-width;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
-// $topbar-height: rem-calc(45);
+$topbar-height: rem-calc(60);
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
