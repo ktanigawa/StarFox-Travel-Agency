@@ -1894,7 +1894,7 @@ meta.foundation-mq-topbar {
   .top-bar form, .top-bar input {
     margin-bottom: 0; }
   .top-bar input {
-    height: 1.75rem;
+    height: 3.125rem;
     padding-top: .35rem;
     padding-bottom: .35rem;
     font-size: 0.75rem; }
@@ -2186,8 +2186,8 @@ meta.foundation-mq-topbar {
     .top-bar input, .top-bar .button, .top-bar button {
       font-size: 0.875rem;
       position: relative;
-      height: 1.75rem;
-      top: 0.53125rem; }
+      height: 3.125rem;
+      top: -0.15625rem; }
     .top-bar.expanded {
       background: #333333; }
   .contain-to-grid .top-bar {
@@ -3164,35 +3164,51 @@ body {
 
 .highlights {
   padding-top: 50px; }
-  .highlights .to_the_moon.highlight {
+  .highlights .highlight {
     background-color: #5B5B5B;
-    border-radius: 5px;
-    text-align: center; }
-    .highlights .to_the_moon.highlight h2 {
-      text-align: center;
-      font-size: 18px;
-      color: #FFFFFF;
-      font-weight: 600;
-      border-bottom: solid 1px #555555;
-      height: 50px;
-      padding-top: 15px;
-      margin: 0; }
-    .highlights .to_the_moon.highlight .amount {
-      border-top: solid 2px #777777; }
-      .highlights .to_the_moon.highlight .amount h3 {
+    border-radius: 5px; }
+    .highlights .highlight:hover {
+      background-color: red; }
+    @media only screen and (max-width: 40em) {
+      .highlights .highlight {
+        text-align: center; } }
+    @media only screen and (max-width: 40em) {
+      .highlights .highlight h2 {
+        text-align: center;
+        font-size: 18px;
+        color: #FFFFFF;
+        font-weight: 600;
+        border-bottom: solid 1px #555555;
+        padding: 10px 0;
+        margin: 0; } }
+    @media only screen and (max-width: 40em) {
+      .highlights .highlight h3 {
         border-bottom: solid 5px #FFFFFF;
         display: inline-block;
         text-align: center;
         font-size: 50px;
         color: #FFFFFF;
         font-weight: 300;
-        padding-top: 15px; }
-    .highlights .to_the_moon.highlight p {
+        padding-top: 15px; } }
+  @media only screen and (max-width: 40em) {
+    .highlights p {
       text-align: center;
       font-size: 12px;
       color: #FFFFFF;
       font-weight: 300;
-      padding: 30px 70px 30px; }
+      padding: 15px 50px 5px; } }
+  @media only screen and (max-width: 40em) {
+    .highlights .amount {
+      border-top: solid 1px #777777; } }
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
+    .highlights .amount {
+      text-align: center;
+      width: 30%;
+      float: left; } }
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
+    .highlights .amount .highlight_description {
+      width: 70%;
+      float: right; } }
 
 .more_deals_container {
   background-color: #93CDCC;
@@ -3213,7 +3229,7 @@ body {
         padding-top: 23px; } }
     @media only screen and (min-width:40.063em) and (max-width:64em) {
       .more_deals_container a {
-        background-position: 500px 20px;
+        background-position: 50% 20px;
         padding-top: 23px; } }
 
 footer .row {

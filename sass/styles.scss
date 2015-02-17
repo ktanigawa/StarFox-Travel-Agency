@@ -167,34 +167,106 @@ nav.top-bar{
   }
 }
 
+// .highlights{
+//   padding-top: 50px;
+//   @media #{$small-up}{ 
+//     .to_the_moon.highlight{
+//       background-color: $steel;
+//       border-radius: 5px;
+//       text-align: center;
+//       & h2{
+//         @include starfox_font(18px, $white, 600);
+//         border-bottom: solid 1px $darkruletop;
+//         height: 50px;
+//         padding-top: 15px;
+//         margin: 0;
+//       }
+//       & .amount{
+//         border-top: solid 1px $lightrulebottom;    
+//         h3{
+//           @include starfox_font(50px, $white, 300);
+//           padding-top: 15px;
+
+//           @media #{$small-only}{
+//             border-bottom: solid 5px $white;
+//             display: inline-block;
+//           }
+
+//           @media #{$medium-only}{
+//   // code goes here
+//             width: 30%;
+//             float: left;
+//             border-bottom: solid 5px $white;
+//             display: inline-block;
+//           }
+//         }  
+//       }
+//       p{
+//         @include starfox_font(12px, $white, 300);
+//         padding: 30px 50px 30px;
+//       }
+
+//       & .highlight_description{
+//         h2{
+//           @media #{$medium-only}{
+//             width: 70%;
+//             float: right;
+//           }
+//         }
+//       }
+//     }
+//   }
+
 .highlights{
   padding-top: 50px;
   // .just_around_earth,
-  .to_the_moon.highlight{
+  .highlight{
     background-color: $steel;
     border-radius: 5px;
-    text-align: center;
-    & h2{
-      @include starfox_font(18px, $white, 600);
-      border-bottom: solid 1px $darkruletop;
-      height: 50px;
-      padding-top: 15px;
-      margin: 0;
+    &:hover{
+      background-color: red;
     }
-    & .amount{
-      border-top: solid 2px $lightrulebottom;
-      h3{
+
+    @media #{$small-only}{
+      text-align: center;
+    }
+    h2{
+      @media #{$small-only}{
+        @include starfox_font(18px, $white, 600);
+        border-bottom: solid 1px $darkruletop;
+        padding: 10px 0;
+        margin: 0;
+      }
+    }
+    h3{
+      @media #{$small-only}{
         border-bottom: solid 5px $white;
         display: inline-block;
         @include starfox_font(50px, $white, 300);
-        // height: 60px;
         padding-top: 15px;
       }
     }
     p{
-      @include starfox_font(12px, $white, 300);
-      padding: 30px 70px 30px;
+      @media #{$small-only}{
+        @include starfox_font(12px, $white, 300);
+        padding: 15px 50px 5px;
+      }
     }
+    .amount{
+      @media #{$small-only}{
+        border-top: solid 1px $lightrulebottom;
+      }
+      @media #{$medium-only}{
+        text-align: center;
+        width: 30%;
+        float: left;
+      }
+    .highlight_description{
+      @media #{$medium-only}{
+        width: 70%;
+        float: right;
+      }
+    }  
   }
 }
 
@@ -213,7 +285,7 @@ nav.top-bar{
       padding-top: 23px;
     }
     @media #{$medium-only}{
-      background-position: 500px 20px;
+      background-position: 50% 20px;
       padding-top: 23px;
     }
   }
