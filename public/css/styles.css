@@ -3045,20 +3045,22 @@ header .logo_container {
     text-align: center;
     top: 175px;
     margin-bottom: -46px; }
-    nav.desktop-nav ul li {
-      display: inline-block;
-      margin: 0 20px;
-      padding-top: 15px; }
-      nav.desktop-nav ul li a {
-        text-align: center;
-        font-size: 18px;
-        color: #93CDCC;
-        font-weight: 300; }
-      nav.desktop-nav ul li a:hover {
-        text-align: center;
-        font-size: 18px;
-        color: #FFFFFF;
-        font-weight: 500; } }
+    nav.desktop-nav ul {
+      height: 60px; }
+      nav.desktop-nav ul li {
+        display: inline-block;
+        margin: 0 20px;
+        padding-top: 15px; }
+        nav.desktop-nav ul li a {
+          text-align: center;
+          font-size: 18px;
+          color: #93CDCC;
+          font-weight: 300; }
+        nav.desktop-nav ul li a:hover {
+          text-align: center;
+          font-size: 18px;
+          color: #FFFFFF;
+          font-weight: 500; } }
 
 @media only screen and (max-width: 40em) {
   nav.top-bar ul.title-area.show-for-small {
@@ -3118,20 +3120,21 @@ header .logo_container {
         width: 30%; } }
   @media only screen and (min-width:40.063em) and (max-width:64em) {
     .hero .hero_wrapper {
-      margin-top: 100px;
+      margin-top: 65px;
       background-color: #93CDCC;
       border-radius: 5px; } }
 
 .hero_text {
   background-image: url('/images/ship.png');
   background-repeat: no-repeat;
-  background-size: 280px; }
+  background-size: 285px; }
   @media only screen and (max-width: 40em) {
     .hero_text {
       background-position: 50% -20px; } }
   @media only screen and (min-width:40.063em) and (max-width:64em) {
     .hero_text {
-      background-position: 50% 20%; } }
+      background-position: 50% -60px;
+      margin-top: -5px; } }
   @media only screen and (min-width:64.063em) {
     .hero_text {
       background-position: 90% -20px; } }
@@ -3152,16 +3155,17 @@ header .logo_container {
         font-weight: 600; } }
   @media only screen and (min-width:40.063em) and (max-width:64em) {
     .hero_text p {
-      padding-top: 200px;
+      padding: 175px 50px 0;
       text-align: center;
       padding-bottom: 10px;
+      line-height: 38px;
       text-align: center;
-      font-size: 19px;
+      font-size: 28px;
       color: #333333;
       font-weight: 300; }
       .hero_text p span {
         text-align: center;
-        font-size: 19px;
+        font-size: 28px;
         color: #333333;
         font-weight: 600; } }
   @media only screen and (min-width:64.063em) {

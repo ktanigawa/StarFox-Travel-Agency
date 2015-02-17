@@ -57,15 +57,18 @@ nav.desktop-nav{
     text-align: center;
     top: 175px;
     margin-bottom: -46px;
-    ul li{
-      display: inline-block;
-      margin: 0 20px;
-      padding-top: 15px;
-      a{
-        @include starfox_font(18px, $blue, 300);
-      }
-      a:hover{
-        @include starfox_font(18px, $white, 500);
+    ul {
+      height: 60px; 
+      li{
+        display: inline-block;
+        margin: 0 20px;
+        padding-top: 15px;
+        a{
+          @include starfox_font(18px, $blue, 300);
+        }
+        a:hover{
+          @include starfox_font(18px, $white, 500);
+        }
       }
     }
   }
@@ -135,7 +138,7 @@ nav.top-bar{
   }
   .hero_wrapper{
     @media #{$medium-only}{
-      margin-top: 100px;
+      margin-top: 65px;
       background-color: $blue;
       border-radius: 5px;
     }
@@ -145,12 +148,13 @@ nav.top-bar{
 .hero_text{ 
   background-image: url('/images/ship.png');
   background-repeat: no-repeat;
-  background-size: 280px;
+  background-size: 285px;
   @media #{$small-only}{
     background-position: 50% -20px;
   }
   @media #{$medium-only}{
-    background-position: 50% 20%;
+    background-position: 50% -60px;
+    margin-top: -5px;
   }
   @media #{$large-up}{
     background-position: 90% -20px;
@@ -167,12 +171,13 @@ nav.top-bar{
       }
     }
     @media #{$medium-only}{
-      padding-top: 200px;
+      padding: 175px 50px 0;
       text-align: center;
       padding-bottom: 10px;
-      @include starfox_font(19px, $dark_grey, 300);
+      line-height: 38px;
+      @include starfox_font(28px, $dark_grey, 300);
       span{
-        @include starfox_font(19px, $dark_grey, 600);
+        @include starfox_font(28px, $dark_grey, 600);
       }
     }
     @media #{$large-up}{
