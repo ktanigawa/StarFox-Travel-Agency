@@ -24,7 +24,7 @@ header .row{
   }
   @media #{$large-up}{
     height: 250px;
-    background-color: $blue;
+    // background-color: $blue;
   }
 }
 
@@ -167,68 +167,17 @@ nav.top-bar{
   }
 }
 
-// .highlights{
-//   padding-top: 50px;
-//   @media #{$small-up}{ 
-//     .to_the_moon.highlight{
-//       background-color: $steel;
-//       border-radius: 5px;
-//       text-align: center;
-//       & h2{
-//         @include starfox_font(18px, $white, 600);
-//         border-bottom: solid 1px $darkruletop;
-//         height: 50px;
-//         padding-top: 15px;
-//         margin: 0;
-//       }
-//       & .amount{
-//         border-top: solid 1px $lightrulebottom;    
-//         h3{
-//           @include starfox_font(50px, $white, 300);
-//           padding-top: 15px;
-
-//           @media #{$small-only}{
-//             border-bottom: solid 5px $white;
-//             display: inline-block;
-//           }
-
-//           @media #{$medium-only}{
-//   // code goes here
-//             width: 30%;
-//             float: left;
-//             border-bottom: solid 5px $white;
-//             display: inline-block;
-//           }
-//         }  
-//       }
-//       p{
-//         @include starfox_font(12px, $white, 300);
-//         padding: 30px 50px 30px;
-//       }
-
-//       & .highlight_description{
-//         h2{
-//           @media #{$medium-only}{
-//             width: 70%;
-//             float: right;
-//           }
-//         }
-//       }
-//     }
-//   }
-
 .highlights{
   padding-top: 50px;
-  // .just_around_earth,
   .highlight{
-    background-color: $steel;
+    background-color: $lightgrey;
     border-radius: 5px;
-    &:hover{
-      background-color: red;
-    }
-
+      margin-bottom: 50px;
     @media #{$small-only}{
       text-align: center;
+    }
+    &:hover{
+      background-color: $hovergrey;
     }
     h2{
       @media #{$small-only}{
@@ -237,6 +186,12 @@ nav.top-bar{
         padding: 10px 0;
         margin: 0;
       }
+      @media #{$medium-only}{
+        @include starfox_font(18px, $white, 600);
+        text-align: left;
+        padding: 10px 20px;
+        border-left: solid 1px $lightrulebottom;
+      }
     }
     h3{
       @media #{$small-only}{
@@ -244,6 +199,13 @@ nav.top-bar{
         display: inline-block;
         @include starfox_font(50px, $white, 300);
         padding-top: 15px;
+      }
+      @media #{$medium-only}{
+        border-bottom: solid 5px $white;
+        display: inline-block;
+        @include starfox_font(50px, $white, 300);
+        padding-top: 15px;
+        margin-left: 15px;
       }
     }
     p{
@@ -260,7 +222,9 @@ nav.top-bar{
         text-align: center;
         width: 30%;
         float: left;
+        border-right: solid 1px $darkruletop;
       }
+    }
     .highlight_description{
       @media #{$medium-only}{
         width: 70%;
@@ -270,28 +234,31 @@ nav.top-bar{
   }
 }
 
-.more_deals_container{
+.more_deals_container .row{
   background-color: $blue;
   height: 85px;
   a{
     @include starfox_font(25px, $white, 600);
-    display: block;
-    text-align: center;
     background-image: url('/images/arrow.png');
     background-repeat: no-repeat;
-    background-size: 40px;
     @media #{$small-only}{
-      background-position: 245px 20px;
+      background-size: 40px;
+      background-position: 225px 20px;
       padding-top: 23px;
+      display: block;
+      text-align: center;
     }
     @media #{$medium-only}{
-      background-position: 50% 20px;
+      display: block;
+      text-align: center;
+      background-position: 600px 20px;
       padding-top: 23px;
+      background-size: 40px;
     }
   }
 }
 
-footer .row{
+footer .row{ 
   background-color: $dark_grey;
   height: 85px;
   p{

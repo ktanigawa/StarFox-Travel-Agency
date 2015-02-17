@@ -3022,8 +3022,7 @@ body {
       height: 150px; } }
 @media only screen and (min-width:64.063em) {
   header .row {
-    height: 250px;
-    background-color: #93CDCC; } }
+    height: 250px; } }
 
 @media only screen and (max-width: 40em) {
   header .row > .columns {
@@ -3165,13 +3164,14 @@ body {
 .highlights {
   padding-top: 50px; }
   .highlights .highlight {
-    background-color: #5B5B5B;
-    border-radius: 5px; }
-    .highlights .highlight:hover {
-      background-color: red; }
+    background-color: #666666;
+    border-radius: 5px;
+    margin-bottom: 50px; }
     @media only screen and (max-width: 40em) {
       .highlights .highlight {
         text-align: center; } }
+    .highlights .highlight:hover {
+      background-color: #444444; }
     @media only screen and (max-width: 40em) {
       .highlights .highlight h2 {
         text-align: center;
@@ -3181,6 +3181,15 @@ body {
         border-bottom: solid 1px #555555;
         padding: 10px 0;
         margin: 0; } }
+    @media only screen and (min-width:40.063em) and (max-width:64em) {
+      .highlights .highlight h2 {
+        text-align: center;
+        font-size: 18px;
+        color: #FFFFFF;
+        font-weight: 600;
+        text-align: left;
+        padding: 10px 20px;
+        border-left: solid 1px #777777; } }
     @media only screen and (max-width: 40em) {
       .highlights .highlight h3 {
         border-bottom: solid 5px #FFFFFF;
@@ -3190,47 +3199,61 @@ body {
         color: #FFFFFF;
         font-weight: 300;
         padding-top: 15px; } }
-  @media only screen and (max-width: 40em) {
-    .highlights p {
-      text-align: center;
-      font-size: 12px;
-      color: #FFFFFF;
-      font-weight: 300;
-      padding: 15px 50px 5px; } }
-  @media only screen and (max-width: 40em) {
-    .highlights .amount {
-      border-top: solid 1px #777777; } }
-  @media only screen and (min-width:40.063em) and (max-width:64em) {
-    .highlights .amount {
-      text-align: center;
-      width: 30%;
-      float: left; } }
-  @media only screen and (min-width:40.063em) and (max-width:64em) {
-    .highlights .amount .highlight_description {
-      width: 70%;
-      float: right; } }
+    @media only screen and (min-width:40.063em) and (max-width:64em) {
+      .highlights .highlight h3 {
+        border-bottom: solid 5px #FFFFFF;
+        display: inline-block;
+        text-align: center;
+        font-size: 50px;
+        color: #FFFFFF;
+        font-weight: 300;
+        padding-top: 15px;
+        margin-left: 15px; } }
+    @media only screen and (max-width: 40em) {
+      .highlights .highlight p {
+        text-align: center;
+        font-size: 12px;
+        color: #FFFFFF;
+        font-weight: 300;
+        padding: 15px 50px 5px; } }
+    @media only screen and (max-width: 40em) {
+      .highlights .highlight .amount {
+        border-top: solid 1px #777777; } }
+    @media only screen and (min-width:40.063em) and (max-width:64em) {
+      .highlights .highlight .amount {
+        text-align: center;
+        width: 30%;
+        float: left;
+        border-right: solid 1px #555555; } }
+    @media only screen and (min-width:40.063em) and (max-width:64em) {
+      .highlights .highlight .highlight_description {
+        width: 70%;
+        float: right; } }
 
-.more_deals_container {
+.more_deals_container .row {
   background-color: #93CDCC;
   height: 85px; }
-  .more_deals_container a {
+  .more_deals_container .row a {
     text-align: center;
     font-size: 25px;
     color: #FFFFFF;
     font-weight: 600;
-    display: block;
-    text-align: center;
     background-image: url('/images/arrow.png');
-    background-repeat: no-repeat;
-    background-size: 40px; }
+    background-repeat: no-repeat; }
     @media only screen and (max-width: 40em) {
-      .more_deals_container a {
-        background-position: 245px 20px;
-        padding-top: 23px; } }
+      .more_deals_container .row a {
+        background-size: 40px;
+        background-position: 225px 20px;
+        padding-top: 23px;
+        display: block;
+        text-align: center; } }
     @media only screen and (min-width:40.063em) and (max-width:64em) {
-      .more_deals_container a {
-        background-position: 50% 20px;
-        padding-top: 23px; } }
+      .more_deals_container .row a {
+        display: block;
+        text-align: center;
+        background-position: 600px 20px;
+        padding-top: 23px;
+        background-size: 40px; } }
 
 footer .row {
   background-color: #2D2D2D;
