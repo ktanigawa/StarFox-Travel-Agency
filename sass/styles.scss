@@ -116,32 +116,40 @@ nav.top-bar{
   @media #{$small-only}{
     background-color: $blue;
   }
-
+  @media #{$large-up}{
+    margin-top: 60px;
+  }
   .hero_action{
     background-color: $lightgrey;
     padding: 15px;
     text-align: center;
     border-bottom: solid 8px $dark_grey;
+    @media #{$medium-only}{
+      margin: 0 auto;
+      width: 310px;
+      height: 63px;
+      margin-bottom: 58px;
+    }
+    @media #{$large-up}{
+      float: right;
+      width: 30%;
+      margin-top: 195px;
+    }
     a{
       @include starfox_font(18px, $white, 300);
       letter-spacing: 1px;
       display: inline-block;
     }
-    @media #{$medium-only}{
-      margin: 0 auto;
-      width: 30%;
-    }
-    @media #{$large-up}{
-      float: right;
-      width: 30%;
-    }
   }
   .hero_wrapper{
+    background-color: $blue;
+    border-radius: 5px;
     @media #{$medium-only}{
       margin-top: 65px;
-      background-color: $blue;
-      border-radius: 5px;
     }
+    // @media #{$large-up}{
+    //   margin: 0;
+    // }
   }
 }
 
@@ -157,7 +165,8 @@ nav.top-bar{
     margin-top: -5px;
   }
   @media #{$large-up}{
-    background-position: 90% -20px;
+    background-position: 50% -2px;
+    // margin-top: -5px;
   }
   p{
     @media #{$small-only}{
@@ -171,33 +180,33 @@ nav.top-bar{
       }
     }
     @media #{$medium-only}{
-      padding: 175px 50px 0;
+      padding: 175px 75px 0;
       text-align: center;
       padding-bottom: 10px;
-      line-height: 38px;
+      line-height: 40px;
       @include starfox_font(28px, $dark_grey, 300);
       span{
         @include starfox_font(28px, $dark_grey, 600);
       }
     }
     @media #{$large-up}{
-      background-color: blue;
-      border-radius: 5px;
-      padding: 25px;
-      @include starfox_font(25px, $dark_grey, 300);
+      float: left;
+      width: 65%;
+      padding: 50px;    
+      @include starfox_font(27px, $dark_grey, 300);
       span{
-        @include starfox_font(25px, $dark_grey, 600);
+        @include starfox_font(27px, $dark_grey, 600);
       }
       text-align: left;
-      float: left;
-      width: 60%;
-      padding: 50px;    
+      line-height: 38px;
     }
   }
 }
 
 .highlights{
-  padding-top: 50px;
+  @media #{$small-only}{
+    padding-top: 50px;
+  }
   .highlight{
     background-color: $lightgrey;
     border-radius: 5px;
@@ -218,21 +227,21 @@ nav.top-bar{
       @media #{$medium-only}{
         @include starfox_font(22px, $white, 600);
         text-align: left;
-        padding: 10px 20px;
       }
     }
     h3{
       padding-top: 15px;
       @media #{$small-only}{
-        border-bottom: solid 5px $white;
+        border-bottom: solid 7px $white;
         display: inline-block;
         @include starfox_font(55px, $white, 300);
       }
       @media #{$medium-only}{
-        border-bottom: solid 5px $white;
+        border-bottom: solid 7px $white;
         display: inline-block;
-        @include starfox_font(55px, $white, 300);
-        margin-left: 15px;
+        @include starfox_font(60px, $white, 300);
+        // margin-left: 15px;
+        margin-top: 50px;
         text-align: left;
       }
     }
@@ -242,9 +251,9 @@ nav.top-bar{
         padding: 15px 110px 5px;
       }
       @media #{$medium-only}{
-        @include starfox_font(12px, $white, 300);
-        padding: 0 20px;
+        @include starfox_font(15px, $white, 300);
         text-align: left;
+        margin-bottom: 0;
       }
     }
     .amount{
@@ -255,13 +264,13 @@ nav.top-bar{
         text-align: center;
         width: 50%;
         float: left;
-        // border-right: solid 1px $darkruletop;
       }
     }
     .highlight_description{
       @media #{$medium-only}{
         width: 50%;
         float: right;
+        padding: 70px;
         border-left: solid 1px $lightrulebottom;
       }
     }  
@@ -285,9 +294,13 @@ nav.top-bar{
     @media #{$medium-only}{
       display: block;
       text-align: center;
-      background-position: 600px 20px;
+      background-position: 475px 20px;
       padding-top: 23px;
       background-size: 40px;
+    }
+    @media #{$large-up}{
+     width: 30%;
+     float: right;
     }
   }
 }

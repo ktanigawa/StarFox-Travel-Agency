@@ -3098,11 +3098,25 @@ header .logo_container {
   @media only screen and (max-width: 40em) {
     .hero {
       background-color: #93CDCC; } }
+  @media only screen and (min-width:64.063em) {
+    .hero {
+      margin-top: 60px; } }
   .hero .hero_action {
     background-color: #666666;
     padding: 15px;
     text-align: center;
     border-bottom: solid 8px #333333; }
+    @media only screen and (min-width:40.063em) and (max-width:64em) {
+      .hero .hero_action {
+        margin: 0 auto;
+        width: 310px;
+        height: 63px;
+        margin-bottom: 58px; } }
+    @media only screen and (min-width:64.063em) {
+      .hero .hero_action {
+        float: right;
+        width: 30%;
+        margin-top: 195px; } }
     .hero .hero_action a {
       text-align: center;
       font-size: 18px;
@@ -3110,19 +3124,12 @@ header .logo_container {
       font-weight: 300;
       letter-spacing: 1px;
       display: inline-block; }
+  .hero .hero_wrapper {
+    background-color: #93CDCC;
+    border-radius: 5px; }
     @media only screen and (min-width:40.063em) and (max-width:64em) {
-      .hero .hero_action {
-        margin: 0 auto;
-        width: 30%; } }
-    @media only screen and (min-width:64.063em) {
-      .hero .hero_action {
-        float: right;
-        width: 30%; } }
-  @media only screen and (min-width:40.063em) and (max-width:64em) {
-    .hero .hero_wrapper {
-      margin-top: 65px;
-      background-color: #93CDCC;
-      border-radius: 5px; } }
+      .hero .hero_wrapper {
+        margin-top: 65px; } }
 
 .hero_text {
   background-image: url('/images/ship.png');
@@ -3137,7 +3144,7 @@ header .logo_container {
       margin-top: -5px; } }
   @media only screen and (min-width:64.063em) {
     .hero_text {
-      background-position: 90% -20px; } }
+      background-position: 50% -2px; } }
   @media only screen and (max-width: 40em) {
     .hero_text p {
       padding-top: 235px;
@@ -3155,10 +3162,10 @@ header .logo_container {
         font-weight: 600; } }
   @media only screen and (min-width:40.063em) and (max-width:64em) {
     .hero_text p {
-      padding: 175px 50px 0;
+      padding: 175px 75px 0;
       text-align: center;
       padding-bottom: 10px;
-      line-height: 38px;
+      line-height: 40px;
       text-align: center;
       font-size: 28px;
       color: #333333;
@@ -3170,99 +3177,98 @@ header .logo_container {
         font-weight: 600; } }
   @media only screen and (min-width:64.063em) {
     .hero_text p {
-      background-color: blue;
-      border-radius: 5px;
-      padding: 25px;
+      float: left;
+      width: 65%;
+      padding: 50px;
       text-align: center;
-      font-size: 25px;
+      font-size: 27px;
       color: #333333;
       font-weight: 300;
       text-align: left;
-      float: left;
-      width: 60%;
-      padding: 50px; }
+      line-height: 38px; }
       .hero_text p span {
         text-align: center;
-        font-size: 25px;
+        font-size: 27px;
         color: #333333;
         font-weight: 600; } }
 
-.highlights {
-  padding-top: 50px; }
-  .highlights .highlight {
-    background-color: #666666;
-    border-radius: 5px;
-    margin-bottom: 50px; }
+@media only screen and (max-width: 40em) {
+  .highlights {
+    padding-top: 50px; } }
+.highlights .highlight {
+  background-color: #666666;
+  border-radius: 5px;
+  margin-bottom: 50px; }
+  @media only screen and (max-width: 40em) {
+    .highlights .highlight {
+      text-align: center; } }
+  .highlights .highlight:hover {
+    background-color: #444444; }
+  @media only screen and (max-width: 40em) {
+    .highlights .highlight h2 {
+      text-align: center;
+      font-size: 22px;
+      color: #FFFFFF;
+      font-weight: 600;
+      border-bottom: solid 1px #555555;
+      padding: 20px 0;
+      margin: 0; } }
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
+    .highlights .highlight h2 {
+      text-align: center;
+      font-size: 22px;
+      color: #FFFFFF;
+      font-weight: 600;
+      text-align: left; } }
+  .highlights .highlight h3 {
+    padding-top: 15px; }
     @media only screen and (max-width: 40em) {
-      .highlights .highlight {
-        text-align: center; } }
-    .highlights .highlight:hover {
-      background-color: #444444; }
-    @media only screen and (max-width: 40em) {
-      .highlights .highlight h2 {
+      .highlights .highlight h3 {
+        border-bottom: solid 7px #FFFFFF;
+        display: inline-block;
         text-align: center;
-        font-size: 22px;
+        font-size: 55px;
         color: #FFFFFF;
-        font-weight: 600;
-        border-bottom: solid 1px #555555;
-        padding: 20px 0;
-        margin: 0; } }
+        font-weight: 300; } }
     @media only screen and (min-width:40.063em) and (max-width:64em) {
-      .highlights .highlight h2 {
+      .highlights .highlight h3 {
+        border-bottom: solid 7px #FFFFFF;
+        display: inline-block;
         text-align: center;
-        font-size: 22px;
-        color: #FFFFFF;
-        font-weight: 600;
-        text-align: left;
-        padding: 10px 20px; } }
-    .highlights .highlight h3 {
-      padding-top: 15px; }
-      @media only screen and (max-width: 40em) {
-        .highlights .highlight h3 {
-          border-bottom: solid 5px #FFFFFF;
-          display: inline-block;
-          text-align: center;
-          font-size: 55px;
-          color: #FFFFFF;
-          font-weight: 300; } }
-      @media only screen and (min-width:40.063em) and (max-width:64em) {
-        .highlights .highlight h3 {
-          border-bottom: solid 5px #FFFFFF;
-          display: inline-block;
-          text-align: center;
-          font-size: 55px;
-          color: #FFFFFF;
-          font-weight: 300;
-          margin-left: 15px;
-          text-align: left; } }
-    @media only screen and (max-width: 40em) {
-      .highlights .highlight p {
-        text-align: center;
-        font-size: 15px;
+        font-size: 60px;
         color: #FFFFFF;
         font-weight: 300;
-        padding: 15px 110px 5px; } }
-    @media only screen and (min-width:40.063em) and (max-width:64em) {
-      .highlights .highlight p {
-        text-align: center;
-        font-size: 12px;
-        color: #FFFFFF;
-        font-weight: 300;
-        padding: 0 20px;
+        margin-top: 50px;
         text-align: left; } }
-    @media only screen and (max-width: 40em) {
-      .highlights .highlight .amount {
-        border-top: solid 1px #777777; } }
-    @media only screen and (min-width:40.063em) and (max-width:64em) {
-      .highlights .highlight .amount {
-        text-align: center;
-        width: 50%;
-        float: left; } }
-    @media only screen and (min-width:40.063em) and (max-width:64em) {
-      .highlights .highlight .highlight_description {
-        width: 50%;
-        float: right;
-        border-left: solid 1px #777777; } }
+  @media only screen and (max-width: 40em) {
+    .highlights .highlight p {
+      text-align: center;
+      font-size: 15px;
+      color: #FFFFFF;
+      font-weight: 300;
+      padding: 15px 110px 5px; } }
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
+    .highlights .highlight p {
+      text-align: center;
+      font-size: 15px;
+      color: #FFFFFF;
+      font-weight: 300;
+      text-align: left;
+      margin-bottom: 0; } }
+  @media only screen and (max-width: 40em) {
+    .highlights .highlight .amount {
+      border-top: solid 1px #777777; } }
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
+    .highlights .highlight .amount {
+      text-align: center;
+      width: 50%;
+      float: left; } }
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
+    .highlights .highlight .highlight_description {
+      width: 50%;
+      float: right;
+      padding: 70px;
+      border-left: solid 1px #777777; } }
 
 .more_deals_container .row {
   background-color: #93CDCC;
@@ -3285,9 +3291,13 @@ header .logo_container {
       .more_deals_container .row a {
         display: block;
         text-align: center;
-        background-position: 600px 20px;
+        background-position: 475px 20px;
         padding-top: 23px;
         background-size: 40px; } }
+    @media only screen and (min-width:64.063em) {
+      .more_deals_container .row a {
+        width: 30%;
+        float: right; } }
 
 footer {
   background-color: #333333;
