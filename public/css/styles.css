@@ -3093,47 +3093,48 @@ header .logo_container {
     font-weight: 300;
     letter-spacing: 1px; } }
 
-.hero {
-  padding-bottom: 45px; }
-  @media only screen and (max-width: 40em) {
-    .hero {
-      background-color: #93CDCC; } }
+@media only screen and (max-width: 40em) {
+  .hero {
+    background-color: #93CDCC; } }
+@media only screen and (min-width:40.063em) and (max-width:64em) {
+  .hero {
+    padding-bottom: 45px; } }
+@media only screen and (min-width:64.063em) {
+  .hero {
+    margin-top: 60px; } }
+.hero .hero_action {
+  background-color: #666666;
+  padding: 15px;
+  text-align: center;
+  border-bottom: solid 8px #333333; }
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
+    .hero .hero_action {
+      margin: 0 auto;
+      width: 310px;
+      height: 63px;
+      margin-bottom: 58px; } }
   @media only screen and (min-width:64.063em) {
-    .hero {
-      margin-top: 60px; } }
-  .hero .hero_action {
-    background-color: #666666;
-    padding: 15px;
+    .hero .hero_action {
+      float: right;
+      width: 25%;
+      margin-top: 80px;
+      margin-right: 50px; } }
+  .hero .hero_action a {
     text-align: center;
-    border-bottom: solid 8px #333333; }
-    @media only screen and (min-width:40.063em) and (max-width:64em) {
-      .hero .hero_action {
-        margin: 0 auto;
-        width: 310px;
-        height: 63px;
-        margin-bottom: 58px; } }
-    @media only screen and (min-width:64.063em) {
-      .hero .hero_action {
-        float: right;
-        width: 25%;
-        margin-top: 80px;
-        margin-right: 50px; } }
-    .hero .hero_action a {
-      text-align: center;
-      font-size: 18px;
-      color: #FFFFFF;
-      font-weight: 300;
-      letter-spacing: 1px;
-      display: inline-block; }
-  .hero .hero_wrapper {
-    background-color: #93CDCC;
-    border-radius: 5px; }
-    @media only screen and (min-width:40.063em) and (max-width:64em) {
-      .hero .hero_wrapper {
-        margin-top: 65px; } }
-    @media only screen and (min-width:64.063em) {
-      .hero .hero_wrapper {
-        height: 320px; } }
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: 300;
+    letter-spacing: 1px;
+    display: inline-block; }
+.hero .hero_wrapper {
+  background-color: #93CDCC;
+  border-radius: 5px; }
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
+    .hero .hero_wrapper {
+      margin-top: 65px; } }
+  @media only screen and (min-width:64.063em) {
+    .hero .hero_wrapper {
+      height: 320px; } }
 
 .hero_text {
   background-image: url('/images/ship.png');
@@ -3198,6 +3199,9 @@ header .logo_container {
         color: #333333;
         font-weight: 600; } }
 
+@media only screen and (min-width:64.063em) {
+  .highlights div.row div.columns.large-4.medium-12.small-12 {
+    padding-right: 0; } }
 @media only screen and (max-width: 40em) {
   .highlights {
     padding-top: 50px; } }
@@ -3299,18 +3303,17 @@ header .logo_container {
         font-size: 60px;
         color: #FFFFFF;
         font-weight: 300;
+        margin-left: 15px;
         margin-top: 50px;
         text-align: left; } }
     @media only screen and (min-width:64.063em) {
       .highlights .highlight h3 {
-        margin-left: 28px;
         text-align: center;
         font-size: 60px;
         color: #FFFFFF;
         font-weight: 300;
         border-bottom: solid 7px #FFFFFF;
-        display: inline-block;
-        text-align: center; } }
+        display: inline-block; } }
   @media only screen and (max-width: 40em) {
     .highlights .highlight p {
       text-align: center;
@@ -3334,7 +3337,7 @@ header .logo_container {
       font-weight: 300;
       text-align: center;
       margin-bottom: 0;
-      padding: 10px 50px 20px; } }
+      padding: 10px 50px 40px; } }
   @media only screen and (max-width: 40em) {
     .highlights .highlight .amount {
       border-top: solid 1px #777777; } }
@@ -3343,6 +3346,11 @@ header .logo_container {
       text-align: center;
       width: 50%;
       float: left; } }
+  @media only screen and (min-width:64.063em) {
+    .highlights .highlight .amount {
+      text-align: center;
+      padding: 20px;
+      border-top: solid 1px #777777; } }
   @media only screen and (min-width:40.063em) and (max-width:64em) {
     .highlights .highlight .highlight_description {
       width: 50%;
