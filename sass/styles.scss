@@ -26,11 +26,6 @@ header{
     background-position: 50% 5px;
   }
 
-  // h1.desktop_logo{
-  //   @media #{$medium-up}{
-    
-  //   }
-  // }
   a{
     @media #{$medium-up}{
       @include starfox_font(21px, $dark_grey, 400);
@@ -212,7 +207,7 @@ nav.top-bar{
   .highlight{
     background-color: $lightgrey;
     border-radius: 5px;
-      margin-bottom: 50px;
+    margin-bottom: 50px;
     @media #{$small-only}{
       text-align: center;
     }
@@ -230,6 +225,12 @@ nav.top-bar{
         @include starfox_font(22px, $white, 600);
         text-align: left;
       }
+      @media #{$large-up}{
+        @include starfox_font(22px, $white, 600);
+        border-bottom: solid 1px $darkruletop;
+        padding: 20px 0;
+        margin: 0;
+      }
     }
     h3{
       padding-top: 15px;
@@ -246,6 +247,13 @@ nav.top-bar{
         margin-top: 50px;
         text-align: left;
       }
+      @media #{$large-up}{
+        margin-left: 28px;
+        @include starfox_font(60px, $white, 300);
+        border-bottom: solid 7px $white;
+        display: inline-block;
+        text-align: center;
+      }
     }
     p{
       @media #{$small-only}{
@@ -256,6 +264,12 @@ nav.top-bar{
         @include starfox_font(15px, $white, 300);
         text-align: left;
         margin-bottom: 0;
+      }
+      @media #{$large-up}{
+        @include starfox_font(12px, $white, 300);
+        text-align: center;
+        margin-bottom: 0;
+        padding: 10px 50px 20px;
       }
     }
     .amount{
@@ -275,7 +289,10 @@ nav.top-bar{
         padding: 70px;
         border-left: solid 1px $lightrulebottom;
       }
-    }  
+    } 
+    .more_details{
+      
+    } 
   }
 }
 
