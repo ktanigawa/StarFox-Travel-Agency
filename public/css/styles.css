@@ -3107,6 +3107,9 @@ header .logo_container {
   padding: 15px;
   text-align: center;
   border-bottom: solid 8px #333333; }
+  @media only screen and (max-width: 40em) {
+    .hero .hero_action {
+      margin-bottom: 40px; } }
   @media only screen and (min-width:40.063em) and (max-width:64em) {
     .hero .hero_action {
       margin: 0 auto;
@@ -3221,6 +3224,8 @@ header .logo_container {
       font-size: 40px;
       color: #FFFFFF;
       font-weight: 300; }
+    .highlights .more_details .just_to_jupiter:hover {
+      background-color: #444444; }
   .highlights .more_details .center_of_the_earth {
     padding: 12px;
     border-radius: 5px 5px 0 0;
@@ -3236,6 +3241,9 @@ header .logo_container {
       font-size: 40px;
       color: #FFFFFF;
       font-weight: 300; }
+    .highlights .more_details .center_of_the_earth:hover {
+      background-color: #444444;
+      border-radius: 0; }
   .highlights .more_details .more_deals_desktop_button {
     height: 70px;
     border-top: 1px solid #777777;
@@ -3243,6 +3251,9 @@ header .logo_container {
     background-repeat: no-repeat;
     background-size: 40px;
     background-position: 180px; }
+    .highlights .more_details .more_deals_desktop_button:hover {
+      background-color: #444444;
+      border-radius: 0 0 5px 5px; }
     .highlights .more_details .more_deals_desktop_button .more_deals_desktop_image {
       margin-top: 15px; }
     .highlights .more_details .more_deals_desktop_button .more_deals_desktop {
@@ -3260,6 +3271,8 @@ header .logo_container {
       text-align: center; } }
   .highlights .highlight:hover {
     background-color: #444444; }
+    .highlights .highlight:hover.more_details {
+      background-color: #666666; }
   @media only screen and (max-width: 40em) {
     .highlights .highlight h2 {
       text-align: center;
