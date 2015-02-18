@@ -3115,8 +3115,9 @@ header .logo_container {
     @media only screen and (min-width:64.063em) {
       .hero .hero_action {
         float: right;
-        width: 30%;
-        margin-top: 195px; } }
+        width: 25%;
+        margin-top: 80px;
+        margin-right: 50px; } }
     .hero .hero_action a {
       text-align: center;
       font-size: 18px;
@@ -3130,6 +3131,9 @@ header .logo_container {
     @media only screen and (min-width:40.063em) and (max-width:64em) {
       .hero .hero_wrapper {
         margin-top: 65px; } }
+    @media only screen and (min-width:64.063em) {
+      .hero .hero_wrapper {
+        height: 320px; } }
 
 .hero_text {
   background-image: url('/images/ship.png');
@@ -3144,7 +3148,9 @@ header .logo_container {
       margin-top: -5px; } }
   @media only screen and (min-width:64.063em) {
     .hero_text {
-      background-position: 50% -2px; } }
+      background-position: 700px -75px;
+      margin-top: -5px;
+      height: 125px; } }
   @media only screen and (max-width: 40em) {
     .hero_text p {
       padding-top: 235px;
@@ -3178,17 +3184,17 @@ header .logo_container {
   @media only screen and (min-width:64.063em) {
     .hero_text p {
       float: left;
-      width: 65%;
-      padding: 50px;
+      width: 70%;
+      padding: 70px;
       text-align: center;
-      font-size: 27px;
+      font-size: 29px;
       color: #333333;
       font-weight: 300;
       text-align: left;
-      line-height: 38px; }
+      line-height: 40px; }
       .hero_text p span {
         text-align: center;
-        font-size: 27px;
+        font-size: 29px;
         color: #333333;
         font-weight: 600; } }
 
@@ -3296,8 +3302,7 @@ header .logo_container {
         background-size: 40px; } }
     @media only screen and (min-width:64.063em) {
       .more_deals_container .row a {
-        width: 30%;
-        float: right; } }
+        display: block; } }
 
 footer {
   background-color: #333333;
