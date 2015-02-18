@@ -3120,6 +3120,7 @@ header .logo_container {
     .hero .hero_action {
       float: right;
       width: 25%;
+      box-sizing: border-box;
       margin-top: 80px;
       margin-right: 50px; } }
   .hero .hero_action a {
@@ -3188,7 +3189,8 @@ header .logo_container {
   @media only screen and (min-width:64.063em) {
     .hero_text p {
       float: left;
-      width: 70%;
+      width: 65%;
+      box-sizing: border-box;
       padding: 70px;
       text-align: center;
       font-size: 29px;

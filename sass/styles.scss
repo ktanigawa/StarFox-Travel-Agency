@@ -133,6 +133,7 @@ nav.top-bar{
     @media #{$large-up}{
       float: right;
       width: 25%;
+      box-sizing: border-box;
       margin-top: 80px;
       margin-right: 50px;
     }
@@ -193,7 +194,8 @@ nav.top-bar{
     }
     @media #{$large-up}{
       float: left;
-      width: 70%;
+      width: 65%;
+      box-sizing: border-box;
       padding: 70px;    
       @include starfox_font(29px, $dark_grey, 300);
       span{
