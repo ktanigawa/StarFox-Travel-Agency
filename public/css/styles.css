@@ -3232,17 +3232,21 @@ header .logo_container {
       font-size: 40px;
       color: #FFFFFF;
       font-weight: 300; }
-  .highlights .more_details .more_deals_desktop {
-    text-align: center;
-    font-size: 20px;
-    color: #FFFFFF;
-    font-weight: 300;
-    margin-left: 60px; }
-  .highlights .more_details a {
+  .highlights .more_details .more_deals_desktop_button {
+    height: 70px;
+    border-top: 1px solid #777777;
     background-image: url('/images/arrow.png');
     background-repeat: no-repeat;
-    background-position: 120px;
-    background-size: 40px; }
+    background-size: 40px;
+    background-position: 180px; }
+    .highlights .more_details .more_deals_desktop_button .more_deals_desktop_image {
+      margin-top: 15px; }
+    .highlights .more_details .more_deals_desktop_button .more_deals_desktop {
+      text-align: center;
+      font-size: 22px;
+      color: #FFFFFF;
+      font-weight: 300;
+      margin-left: 50px; }
 .highlights .highlight {
   background-color: #666666;
   border-radius: 5px;

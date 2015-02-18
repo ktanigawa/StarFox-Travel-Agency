@@ -229,17 +229,21 @@ nav.top-bar{
         @include starfox_font(40px, $white, 300);
       }
     }
-    .more_deals_desktop{
-      // background-color: pink;
-      @include starfox_font(20px, $white, 300);
-      margin-left: 60px;
-    }
-    a{
+    .more_deals_desktop_button{
+      height: 70px;
+      border-top: 1px solid $lightrulebottom;
       background-image: url('/images/arrow.png');
       background-repeat: no-repeat;
-      background-position: 120px;
       background-size: 40px; 
-    }    
+      background-position: 180px;
+      .more_deals_desktop_image{
+        margin-top: 15px;
+      }    
+      .more_deals_desktop{
+        @include starfox_font(22px, $white, 300);
+        margin-left: 50px;
+      }
+    }
   }
   .highlight{
     background-color: $lightgrey;
