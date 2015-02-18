@@ -204,6 +204,43 @@ nav.top-bar{
   @media #{$small-only}{
     padding-top: 50px;
   }
+  .more_details{
+    border-radius: 5px;
+    .just_to_jupiter{
+      padding: 12px;
+      border-radius: 5px 5px 0 0;
+      border-bottom: 1px solid $darkruletop;
+      h4{
+        @include starfox_font(15px, $white, 600);
+      }
+      h5{
+        @include starfox_font(40px, $white, 300);
+      }
+    }
+    .center_of_the_earth{
+      padding: 12px;
+      border-radius: 5px 5px 0 0;
+      border-bottom: 1px solid $darkruletop;
+      border-top: 1px solid $lightrulebottom;
+      h4{
+        @include starfox_font(15px, $white, 600);
+      }
+      h5{
+        @include starfox_font(40px, $white, 300);
+      }
+    }
+    .more_deals_desktop{
+      // background-color: pink;
+      @include starfox_font(20px, $white, 300);
+      margin-left: 60px;
+    }
+    a{
+      background-image: url('/images/arrow.png');
+      background-repeat: no-repeat;
+      background-position: 120px;
+      background-size: 40px; 
+    }    
+  }
   .highlight{
     background-color: $lightgrey;
     border-radius: 5px;
@@ -289,10 +326,7 @@ nav.top-bar{
         padding: 70px;
         border-left: solid 1px $lightrulebottom;
       }
-    } 
-    .more_details{
-      
-    } 
+    }
   }
 }
 
